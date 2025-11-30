@@ -1,0 +1,6 @@
+# robots.txt for LearnFlow
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://learnflowforfree.netlify.app/sitemap.xml

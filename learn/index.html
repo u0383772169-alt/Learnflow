@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnFlow - AI-Powered Learning Platform</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="LearnFlow is a free AI-powered learning platform with an AI tutor, smart quizzes, flashcards, and interactive lessons. Learn any subject with personalized AI assistance.">
+    <meta name="keywords" content="AI learning, AI tutor, online education, flashcards, quiz generator, study tool, free learning platform">
+    <meta name="author" content="Chewang Tamang">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#6366f1">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://learnflowforfree.netlify.app/">
+    <meta property="og:title" content="LearnFlow - AI-Powered Learning Platform">
+    <meta property="og:description" content="Learn any subject with AI tutoring, smart quizzes, and flashcards. Free to use!">
+    <meta property="og:image" content="https://learnflowforfree.netlify.app/og-image.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://learnflowforfree.netlify.app/">
+    <meta name="twitter:title" content="LearnFlow - AI-Powered Learning Platform">
+    <meta name="twitter:description" content="Learn any subject with AI tutoring, smart quizzes, and flashcards. Free to use!">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Landing Page -->
+    <div class="landing-page" id="landing-page">
+        <!-- Navigation Bar -->
+        <nav class="landing-nav">
+            <div class="nav-logo">
+                <svg class="logo-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="8" height="8" rx="2" fill="#667eea"/>
+                    <rect x="13" y="3" width="8" height="8" rx="2" fill="#764ba2"/>
+                    <rect x="3" y="13" width="8" height="8" rx="2" fill="#f093fb"/>
+                    <rect x="13" y="13" width="8" height="8" rx="2" fill="#4facfe"/>
+                </svg>
+                <span class="logo-text">LearnFlow</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">Explore</a>
+                <a href="#download" class="nav-link">Download App</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+            </div>
+            <div class="nav-actions">
+                <div id="google_translate_element" class="translate-widget"></div>
+                <button class="nav-btn-secondary" onclick="showLoginSection()">Log In</button>
+                <button class="nav-btn-primary" onclick="showLoginSection()">Start Learning</button>
+            </div>
+        </nav>
+
+        <!-- Google Translate Script -->
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Learn Anything,<br><span class="gradient-text">Powered by AI</span></h1>
+                <p class="hero-subtitle">The ultimate learning platform with AI-generated quizzes, smart flashcards, and a personal AI tutor. Transform any content into effective study materials.</p>
+                <div class="hero-buttons">
+                    <button class="btn-start-learning" onclick="showLoginSection()">
+                        <span>Start Learning</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                    <button class="btn-watch-demo" onclick="scrollToFeatures()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <span>See How It Works</span>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Students</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1M+</span>
+                        <span class="stat-label">Flashcards Created</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Topics</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f093fb" stroke-width="2">
+                        <path d="M12 2a9 9 0 0 1 9 9c0 3.6-3 6.5-4.5 8l-1 1.5a3.5 3.5 0 0 1-7 0l-1-1.5C6 17.5 3 14.6 3 11a9 9 0 0 1 9-9z"/>
+                        <path d="M12 8v4M10 17h4"/>
+                    </svg>
+                    <p>AI Quiz Generator</p>
+                </div>
+                <div class="floating-card card-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="M2 8h20M8 4v4"/>
+                    </svg>
+                    <p>Smart Flashcards</p>
+                </div>
+                <div class="floating-card card-3">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="16" rx="3"/>
+                        <circle cx="9" cy="10" r="2"/>
+                        <circle cx="15" cy="10" r="2"/>
+                        <path d="M9 16h6"/>
+                    </svg>
+                    <p>AI Tutor</p>
+                </div>
+                <div class="floating-card card-4">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2">
+                        <path d="M3 3v18h18"/>
+                        <path d="M7 16l4-4 4 4 5-6"/>
+                    </svg>
+                    <p>Progress Tracking</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <h2 class="section-title">Explore Our Features</h2>
+            <p class="section-subtitle">Everything you need to supercharge your learning</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a9 9 0 0 1 9 9c0 3.6-3 6.5-4.5 8l-1 1.5a3.5 3.5 0 0 1-7 0l-1-1.5C6 17.5 3 14.6 3 11a9 9 0 0 1 9-9z"/>
+                            <path d="M12 8v4M10 17h4"/>
+                        </svg>
+                    </div>
+                    <h3>AI Quiz Generator</h3>
+                    <p>Enter any topic and our AI creates personalized quizzes with multiple question types</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="16" rx="3"/>
+                            <circle cx="9" cy="10" r="2"/>
+                            <circle cx="15" cy="10" r="2"/>
+                            <path d="M9 16h6"/>
+                        </svg>
+                    </div>
+                    <h3>AI Tutor</h3>
+                    <p>Get instant explanations, examples, and guidance on any subject 24/7</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <path d="M23 7l-7 5 7 5V7z" fill="#FF0000"/>
+                            <rect x="1" y="5" width="15" height="14" rx="2" fill="#FF0000"/>
+                            <path d="M10 9l-4 3 4 3V9z" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3>YouTube to Flashcards</h3>
+                    <p>Convert video transcripts into study materials automatically</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                        </svg>
+                    </div>
+                    <h3>PDF & Notes Import</h3>
+                    <p>Transform documents and notes into interactive flashcards</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8M12 17v4"/>
+                        </svg>
+                    </div>
+                    <h3>PowerPoint Learning</h3>
+                    <p>Summarize presentations and create study cards from slides</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <h3>12+ Languages</h3>
+                    <p>Learn in English, Spanish, French, German, Chinese, and more</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section class="download-section" id="download">
+            <div class="download-content">
+                <h2>Download the App</h2>
+                <p>Take your learning anywhere with our mobile apps</p>
+                <div class="download-buttons">
+                    <button class="download-btn" onclick="showToast('Mobile app coming soon!', 'info')">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        <div>
+                            <span class="small">Download on the</span>
+                            <span class="big">App Store</span>
+                        </div>
+                    </button>
+                    <button class="download-btn" onclick="showToast('Mobile app coming soon!', 'info')">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3.18 23.04c-.63-.36-.82-1.1-.82-1.1L2.3 2.13S2.5 1.3 3.27.94c.77-.36 1.42.1 1.42.1l8.45 4.87L17.8.89s.65-.46 1.42-.1c.77.36.97 1.19.97 1.19l.06 19.81s-.19.74-.82 1.1c-.63.36-1.36.04-1.36.04l-5.04-2.9-8.48 4.86s-.73.41-1.36.04z"/>
+                        </svg>
+                        <div>
+                            <span class="small">Get it on</span>
+                            <span class="big">Google Play</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing" aria-labelledby="pricing-heading">
+            <h2 class="section-title" id="pricing-heading">Choose Your Plan</h2>
+            <p class="section-subtitle">Start free, upgrade when you need more</p>
+
+            <!-- Billing Toggle -->
+            <div class="billing-toggle" role="group" aria-label="Billing period selection">
+                <button type="button" class="billing-option active" data-period="monthly" aria-pressed="true" onclick="toggleBillingPeriod('monthly')">Monthly</button>
+                <button type="button" class="billing-option" data-period="yearly" aria-pressed="false" onclick="toggleBillingPeriod('yearly')">
+                    Yearly
+                    <span class="save-badge">Save 20%</span>
+                </button>
+            </div>
+
+            <div class="pricing-grid" role="list">
+                <!-- Free Tier -->
+                <article class="pricing-card-landing" role="listitem" aria-labelledby="free-plan-title">
+                    <h3 id="free-plan-title">Free</h3>
+                    <div class="price" aria-label="Free, zero dollars per month">
+                        <span class="price-amount" data-monthly="0" data-yearly="0">$0</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="feature-list" aria-label="Free plan features">
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> 5 AI requests per day</li>
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> Up to 10 flashcard decks</li>
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> Basic quiz generation</li>
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> <span class="feature-limited">AI Tutor (3 questions/day)</span></li>
+                        <li><span class="feature-icon excluded" aria-hidden="true">✗</span> <span class="excluded-feature">Export to PDF</span></li>
+                        <li><span class="feature-icon excluded" aria-hidden="true">✗</span> <span class="excluded-feature">Priority support</span></li>
+                    </ul>
+                    <button type="button" class="pricing-btn" onclick="showLoginSection()" aria-describedby="free-trust-signals">
+                        Get Started Free
+                    </button>
+                    <p class="trust-signals" id="free-trust-signals">No credit card required</p>
+                </article>
+
+                <!-- Pro Tier - Most Popular -->
+                <article class="pricing-card-landing featured" role="listitem" aria-labelledby="pro-plan-title">
+                    <div class="tier-badge popular" aria-label="Most Popular plan">Most Popular</div>
+                    <h3 id="pro-plan-title">Pro</h3>
+                    <div class="price" aria-label="Three dollars per month, or twenty-nine dollars per year">
+                        <span class="price-amount" data-monthly="3" data-yearly="29">$3</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <p class="yearly-price-note" aria-hidden="true">$29/year when billed annually</p>
+                    <ul class="feature-list" aria-label="Pro plan features">
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> 50 AI requests per day</li>
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> Unlimited flashcard decks</li>
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> Advanced quiz generation</li>
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> <strong>Full AI Tutor</strong> (unlimited)</li>
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> Export to PDF</li>
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> Voice input & output</li>
+                        <li><span class="feature-icon excluded" aria-hidden="true">✗</span> <span class="excluded-feature">Flow-AI Pro</span></li>
+                    </ul>
+                    <button type="button" class="pricing-btn featured" onclick="showLoginSection()" aria-describedby="pro-trust-signals">
+                        Start 7-Day Free Trial
+                    </button>
+                    <p class="trust-signals" id="pro-trust-signals">
+                        Cancel anytime. 7-day refund guaranteed.
+                    </p>
+                </article>
+
+                <!-- Ultimate Tier - Best Value -->
+                <article class="pricing-card-landing" role="listitem" aria-labelledby="ultimate-plan-title">
+                    <div class="tier-badge value" aria-label="Best Value plan">Best Value</div>
+                    <h3 id="ultimate-plan-title">Ultimate</h3>
+                    <div class="price" aria-label="Ten dollars per month, or ninety-six dollars per year">
+                        <span class="price-amount" data-monthly="10" data-yearly="96">$10</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <p class="yearly-price-note" aria-hidden="true">$96/year when billed annually</p>
+                    <ul class="feature-list" aria-label="Ultimate plan features">
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> <strong>Unlimited</strong> AI requests<sup>*</sup></li>
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> Flow-AI Pro quizzes</li>
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> Priority 24/7 support</li>
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> Advanced study analytics</li>
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> Collaboration features</li>
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> Export to all formats</li>
+                        <li><span class="feature-icon included" aria-hidden="true">✓</span> Early access to features</li>
+                    </ul>
+                    <p class="fair-use-note">*Subject to fair use policy. Heavy abuse may be restricted.</p>
+                    <button type="button" class="pricing-btn" onclick="showLoginSection()" aria-describedby="ultimate-trust-signals">
+                        Go Ultimate
+                    </button>
+                    <p class="trust-signals" id="ultimate-trust-signals">
+                        Cancel anytime. 7-day refund guaranteed.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Refund Policy Info -->
+            <div class="pricing-policy" aria-label="Subscription policy">
+                <p><strong>Flexible & Fair:</strong> Cancel your subscription anytime from your account settings. All paid plans include a 7-day refund window — no questions asked. Your data remains accessible even after downgrading.</p>
+            </div>
+
+            <!-- Money-back Guarantee -->
+            <div class="pricing-guarantee" aria-label="Money-back guarantee">
+                <span class="guarantee-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span>
+                <p><strong>30-Day Money-Back Guarantee</strong> — Try risk-free. Not satisfied? Get a full refund, no questions asked.</p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>Ready to Transform Your Learning?</h2>
+            <p>Join thousands of students already learning smarter with AI</p>
+            <button class="btn-start-learning large" onclick="showLoginSection()">
+                <span>Start Learning Now</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </button>
+        </section>
+
+        <!-- Footer -->
+        <footer class="landing-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>LearnFlow</span>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <p class="copyright">© 2024 LearnFlow. All rights reserved.</p>
+                <p class="made-by">Made by <strong>Chewang Tamang</strong></p>
+                <p class="roblox-credit">Roblox: <a href="https://www.roblox.com/users/profile" target="_blank">@Gdhdhshh4</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Login Section -->
+    <div class="login-section hidden" id="login-section">
+        <button class="back-btn" onclick="showLandingPage()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Back
+        </button>
+
+        <div class="auth-container">
+            <div class="auth-logo">
+                <svg class="logo-icon" width="48" height="48" viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="3" width="8" height="8" rx="2" fill="#667eea"/>
+                    <rect x="13" y="3" width="8" height="8" rx="2" fill="#764ba2"/>
+                    <rect x="3" y="13" width="8" height="8" rx="2" fill="#f093fb"/>
+                    <rect x="13" y="13" width="8" height="8" rx="2" fill="#4facfe"/>
+                </svg>
+                <h1>LearnFlow</h1>
+                <p>AI-Powered Learning Platform</p>
+            </div>
+
+            <!-- Main Auth Form - Google Sign In -->
+            <div class="auth-form" id="login-form">
+                <h2>Get Started</h2>
+                <p class="auth-subtitle">Sign in or create an account to access all features</p>
+
+                <button class="google-btn large" onclick="handleGoogleLogin()">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                    </svg>
+                    Continue with Google
+                </button>
+
+                <div class="auth-divider">
+                    <span>or use email</span>
+                </div>
+
+                <button class="secondary-auth-btn" onclick="showEmailLogin()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Sign in with Email
+                </button>
+                <button class="secondary-auth-btn" onclick="showEmailSignup()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="8.5" cy="7" r="4"/>
+                        <line x1="20" y1="8" x2="20" y2="14"/>
+                        <line x1="23" y1="11" x2="17" y2="11"/>
+                    </svg>
+                    Create Account with Email
+                </button>
+            </div>
+
+            <!-- Email Login Form -->
+            <div class="auth-form hidden" id="email-login-form">
+                <button class="back-to-main" onclick="showMainAuth()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Back
+                </button>
+                <h2>Sign In</h2>
+                <div class="input-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" placeholder="your@email.com">
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="••••••••">
+                </div>
+                <button class="primary-btn full-width" onclick="handleLogin()">
+                    Sign In
+                </button>
+                <p class="auth-switch">
+                    Don't have an account? <a href="#" onclick="showEmailSignup()">Sign up</a>
+                </p>
+            </div>
+
+            <!-- Email Signup Form -->
+            <div class="auth-form hidden" id="signup-form">
+                <button class="back-to-main" onclick="showMainAuth()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Back
+                </button>
+                <h2>Create Account</h2>
+                <div class="input-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" placeholder="John Doe">
+                </div>
+                <div class="input-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="your@email.com">
+                </div>
+                <div class="input-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="••••••••">
+                </div>
+                <button class="primary-btn full-width" onclick="handleSignup()">
+                    Create Account
+                </button>
+                <p class="auth-switch">
+                    Already have an account? <a href="#" onclick="showEmailLogin()">Sign in</a>
+                </p>
+            </div>
+
+            <!-- Guest Mode Warning -->
+            <div class="guest-warning">
+                <div class="warning-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg></div>
+                <div class="warning-content">
+                    <h4>Continue as Guest?</h4>
+                    <p>Without logging in, you'll miss out on:</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg> Saving your progress & flashcards</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg> AI Tutor access</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg> More AI requests per day</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg> Syncing across devices</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="guest-btn" onclick="continueAsGuest()">
+                Continue as Guest Anyway (Limited Features)
+            </button>
+        </div>
+    </div>
+
+    <!-- Main App -->
+    <main class="app-container hidden" id="app-container" role="main" aria-label="LearnFlow Application">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <svg class="logo-icon" width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="3" width="8" height="8" rx="2" fill="#667eea"/>
+                    <rect x="13" y="3" width="8" height="8" rx="2" fill="#764ba2"/>
+                    <rect x="3" y="13" width="8" height="8" rx="2" fill="#f093fb"/>
+                    <rect x="13" y="13" width="8" height="8" rx="2" fill="#4facfe"/>
+                </svg>
+                <span class="logo-text">LearnFlow</span>
+            </div>
+
+            <!-- User Info -->
+            <div class="user-info" id="user-info">
+                <div class="user-avatar" id="user-avatar">G</div>
+                <div class="user-details">
+                    <span class="user-name" id="user-name">Guest</span>
+                    <span class="user-plan" id="user-plan">Free Plan</span>
+                </div>
+                <button class="upgrade-btn" id="upgrade-btn" onclick="showPricing()">Upgrade</button>
+            </div>
+
+            <!-- Usage Counter -->
+            <div class="usage-counter" id="usage-counter">
+                <div class="usage-bar">
+                    <div class="usage-fill" id="usage-fill"></div>
+                </div>
+                <span class="usage-text" id="usage-text">0 / 5 AI requests today</span>
+            </div>
+
+            <div class="nav-section">
+                <h3>AI Tools</h3>
+                <button class="nav-btn" data-view="quiz">
+                    <span class="nav-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </span>
+                    AI Quiz Generator
+                    <span class="ai-badge">AI</span>
+                </button>
+                <button class="nav-btn" data-view="ai-tutor">
+                    <span class="nav-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            <path d="M8 10h.01M12 10h.01M16 10h.01"/>
+                        </svg>
+                    </span>
+                    AI Tutor
+                    <span class="ai-badge">AI</span>
+                </button>
+                <button class="nav-btn" data-view="video-learn">
+                    <span class="nav-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="23 7 16 12 23 17 23 7"/>
+                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                        </svg>
+                    </span>
+                    AI Video Learn
+                    <span class="ai-badge">AI</span>
+                </button>
+            </div>
+
+            <div class="nav-section">
+                <h3>Create Flashcards</h3>
+                <button class="nav-btn active" data-view="quizlet">
+                    <span class="nav-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                            <line x1="9" y1="10" x2="15" y2="10"/>
+                            <line x1="9" y1="14" x2="15" y2="14"/>
+                        </svg>
+                    </span>
+                    Quick Import
+                </button>
+                <button class="nav-btn" data-view="youtube">
+                    <span class="nav-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24">
+                            <path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
+                            <path fill="#FFFFFF" d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </span>
+                    YouTube
+                </button>
+                <button class="nav-btn" data-view="pdf">
+                    <span class="nav-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="9" y1="13" x2="15" y2="13"/>
+                            <line x1="9" y1="17" x2="15" y2="17"/>
+                        </svg>
+                    </span>
+                    PDF
+                </button>
+                <button class="nav-btn" data-view="notes">
+                    <span class="nav-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 20h9"/>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                        </svg>
+                    </span>
+                    Notes
+                </button>
+                <button class="nav-btn" data-view="powerpoint">
+                    <span class="nav-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </span>
+                    PowerPoint
+                </button>
+            </div>
+
+            <div class="nav-section">
+                <h3>Study</h3>
+                <button class="nav-btn" data-view="my-decks">
+                    <span class="nav-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="M2 8h20"/>
+                            <path d="M6 4v4"/>
+                            <path d="M10 4v4"/>
+                        </svg>
+                    </span>
+                    My Decks
+                </button>
+                <button class="nav-btn" data-view="study">
+                    <span class="nav-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </span>
+                    Study Mode
+                </button>
+            </div>
+
+            <div class="language-selector">
+                <label for="language">Learning Language:</label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="it">Italian</option>
+                    <option value="pt">Portuguese</option>
+                    <option value="zh">Chinese</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="ar">Arabic</option>
+                    <option value="hi">Hindi</option>
+                    <option value="ru">Russian</option>
+                </select>
+            </div>
+
+            <button class="logout-btn" onclick="handleLogout()">
+                <span>🚪</span> Sign Out
+            </button>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- AI Quiz Generator View -->
+            <section class="view" id="quiz-view">
+                <div class="view-header">
+                    <h1><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>AI Quiz Generator</h1>
+                    <p>Enter any topic and our AI will generate a personalized quiz for you</p>
+                </div>
+                <div class="input-section">
+                    <div class="input-group">
+                        <label for="quiz-topic">What do you want to learn?</label>
+                        <input type="text" id="quiz-topic" placeholder="e.g., World War II, Photosynthesis, JavaScript Promises...">
+                    </div>
+                    <div class="options-row">
+                        <div class="input-group half">
+                            <label for="quiz-difficulty">Difficulty</label>
+                            <select id="quiz-difficulty">
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate" selected>Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                                <option value="expert">Expert</option>
+                            </select>
+                        </div>
+                        <div class="input-group half">
+                            <label for="quiz-count">Number of Questions</label>
+                            <select id="quiz-count">
+                                <option value="5">5 Questions</option>
+                                <option value="10" selected>10 Questions</option>
+                                <option value="15">15 Questions</option>
+                                <option value="20">20 Questions</option>
+                                <option value="30" class="premium-option">30 Questions ★</option>
+                                <option value="50" class="premium-option">50 Questions ★</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="quiz-type">Question Types</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="quiz-type" value="multiple" checked>
+                                <span>Multiple Choice</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="quiz-type" value="truefalse" checked>
+                                <span>True/False</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="quiz-type" value="fillblank">
+                                <span>Fill in the Blank</span>
+                            </label>
+                            <label class="checkbox-option premium-feature">
+                                <input type="checkbox" name="quiz-type" value="shortanswer">
+                                <span>Short Answer ★</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="primary-btn ai-btn" onclick="generateQuiz()">
+                        <svg class="ai-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/></svg>
+                        Generate Quiz with AI
+                    </button>
+                </div>
+
+                <!-- Quiz Container -->
+                <div class="quiz-container hidden" id="quiz-container">
+                    <div class="quiz-header">
+                        <h2 id="quiz-title">Quiz Title</h2>
+                        <div class="quiz-progress">
+                            <span id="quiz-progress-text">Question 1 of 10</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="quiz-progress-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz-question" id="quiz-question-area">
+                        <!-- Questions rendered here -->
+                    </div>
+                    <div class="quiz-controls">
+                        <button class="secondary-btn" onclick="prevQuestion()" id="prev-btn" disabled>Previous</button>
+                        <button class="primary-btn" onclick="nextQuestion()" id="next-btn">Next</button>
+                        <button class="primary-btn hidden" onclick="submitQuiz()" id="submit-btn">Submit Quiz</button>
+                    </div>
+                </div>
+
+                <!-- Quiz Results -->
+                <div class="quiz-results hidden" id="quiz-results">
+                    <div class="results-header">
+                        <h2><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Quiz Complete!</h2>
+                        <div class="score-circle">
+                            <span class="score-value" id="score-value">0%</span>
+                        </div>
+                    </div>
+                    <div class="results-stats">
+                        <div class="result-stat">
+                            <span class="stat-value" id="correct-answers">0</span>
+                            <span class="stat-label">Correct</span>
+                        </div>
+                        <div class="result-stat">
+                            <span class="stat-value" id="wrong-answers">0</span>
+                            <span class="stat-label">Incorrect</span>
+                        </div>
+                        <div class="result-stat">
+                            <span class="stat-value" id="quiz-time">0:00</span>
+                            <span class="stat-label">Time</span>
+                        </div>
+                    </div>
+                    <div class="results-review" id="results-review">
+                        <!-- Review items -->
+                    </div>
+                    <div class="button-group">
+                        <button class="primary-btn" onclick="retakeQuiz()">Retake Quiz</button>
+                        <button class="secondary-btn" onclick="saveQuizAsFlashcards()">Save as Flashcards</button>
+                        <button class="secondary-btn" onclick="newQuiz()">New Quiz</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Tutor View -->
+            <section class="view" id="ai-tutor-view">
+                <div class="view-header">
+                    <h1><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01M12 10h.01M16 10h.01"/></svg>AI Tutor</h1>
+                    <p>Your personal AI tutor - smarter than ChatGPT for learning</p>
+                    <div class="tutor-badge">
+                        <span class="badge-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+                        <span>Advanced AI with deep analysis</span>
+                    </div>
+                </div>
+
+                <!-- Saved Chats Sidebar -->
+                <div class="saved-chats-sidebar" id="saved-chats-sidebar">
+                    <div class="saved-chats-header">
+                        <h3>Chat History</h3>
+                        <button class="close-sidebar-btn" onclick="toggleSavedChatsMenu()">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="new-chat-btn" onclick="startNewChat()">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                        New Chat
+                    </button>
+                    <div class="saved-chats-list" id="saved-chats-list">
+                        <!-- Saved chats will be rendered here -->
+                    </div>
+                </div>
+
+                <div class="tutor-container">
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="chat-message ai">
+                            <div class="message-avatar">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+                                    <circle cx="7.5" cy="14.5" r="1.5"/>
+                                    <circle cx="16.5" cy="14.5" r="1.5"/>
+                                </svg>
+                            </div>
+                            <div class="message-content">
+                                <div class="ai-intro">
+                                    <h4>Hi! I'm LearnFlow AI</h4>
+                                    <p>I'm not just any AI - I <strong>think deeply</strong> about your questions before answering. I analyze what you're really asking, consider multiple angles, and give you the best explanation possible.</p>
+                                </div>
+                                <div class="ai-capabilities">
+                                    <div class="capability">
+                                        <svg class="cap-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2">
+                                            <path d="M12 2a9 9 0 0 1 9 9c0 3.6-3 6.5-4.5 8l-1 1.5a3.5 3.5 0 0 1-7 0l-1-1.5C6 17.5 3 14.6 3 11a9 9 0 0 1 9-9z"/>
+                                        </svg>
+                                        <span>Deep analysis before every response</span>
+                                    </div>
+                                    <div class="capability">
+                                        <svg class="cap-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2">
+                                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                                            <path d="M21 15l-5-5L5 21"/>
+                                        </svg>
+                                        <span>Upload images - I can analyze diagrams, homework, screenshots</span>
+                                    </div>
+                                    <div class="capability">
+                                        <svg class="cap-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                            <path d="M14 2v6h6"/>
+                                        </svg>
+                                        <span>Upload files - PDFs, documents, code files</span>
+                                    </div>
+                                    <div class="capability">
+                                        <svg class="cap-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <circle cx="12" cy="12" r="6"/>
+                                            <circle cx="12" cy="12" r="2"/>
+                                        </svg>
+                                        <span>Personalized explanations at your level</span>
+                                    </div>
+                                </div>
+                                <p class="ai-prompt">What would you like to learn today?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input-area">
+                        <div class="chat-actions-bar">
+                            <button class="saved-chats-toggle-btn" onclick="toggleSavedChatsMenu()" title="View saved chats">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                                Saved Chats
+                            </button>
+                            <button class="new-chat-toggle-btn" onclick="startNewChat()" title="Start new chat">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                                New Chat
+                            </button>
+                        </div>
+                        <div class="suggestion-chips">
+                            <button class="chip" onclick="askSuggestion('Explain quantum physics like I\'m 10')">Quantum physics (simple)</button>
+                            <button class="chip" onclick="askSuggestion('What is machine learning and how does it work?')">Machine learning</button>
+                            <button class="chip" onclick="askSuggestion('Help me understand derivatives in calculus')">Calculus help</button>
+                            <button class="chip" onclick="askSuggestion('Explain World War 2 causes and effects')">History: WW2</button>
+                        </div>
+                        <!-- File preview area -->
+                        <div class="file-preview-area hidden" id="file-preview-area">
+                            <div class="file-preview" id="file-preview">
+                                <!-- Preview content inserted here -->
+                            </div>
+                            <button class="remove-file-btn" onclick="removeUploadedFile()">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- Voice Controls (Paid Feature) -->
+                        <div class="voice-controls" id="voice-controls">
+                            <div class="voice-left">
+                                <button class="voice-toggle-btn" id="voice-output-toggle" onclick="toggleVoiceOutput()" title="Toggle AI voice responses">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="voice-icon">
+                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                                        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+                                    </svg>
+                                    <span id="voice-label">Voice Off</span>
+                                </button>
+                                <!-- Voice Speed Control -->
+                                <div class="voice-speed-control" id="voice-speed-control">
+                                    <label>Speed:</label>
+                                    <input type="range" id="voice-speed-slider" min="0.5" max="2" step="0.25" value="1" onchange="setVoiceSpeed(this.value)" oninput="document.getElementById('speed-value').textContent = this.value + 'x'">
+                                    <span id="speed-value">1x</span>
+                                </div>
+                            </div>
+                            <div class="voice-locked" id="voice-locked">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                                </svg>
+                                <span>Pro/Ultimate only</span>
+                            </div>
+                        </div>
+                        <div class="chat-input-wrapper">
+                            <div class="input-actions">
+                                <input type="file" id="tutor-file-input" accept="image/*,.pdf,.txt,.doc,.docx,.js,.py,.html,.css" hidden onchange="handleFileUpload(event)">
+                                <button class="attach-btn" onclick="document.getElementById('tutor-file-input').click()" title="Upload image or file">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+                                    </svg>
+                                </button>
+                                <button class="image-btn" onclick="document.getElementById('tutor-file-input').click()" title="Upload image">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                                        <polyline points="21 15 16 10 5 21"/>
+                                    </svg>
+                                </button>
+                                <!-- Microphone Button (Paid Feature) -->
+                                <button class="mic-btn" id="mic-btn" onclick="toggleMicrophone()" title="Voice input (Pro/Ultimate)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="mic-icon">
+                                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                                        <line x1="12" y1="19" x2="12" y2="23"/>
+                                        <line x1="8" y1="23" x2="16" y2="23"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <textarea id="tutor-input" placeholder="Ask me anything... I'll think deeply before answering" rows="1"></textarea>
+                            <button class="send-btn" onclick="sendTutorMessage()" id="tutor-send-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="input-hint">
+                            <span>Press Enter to send • Shift+Enter for new line • 🎤 Mic & 🔊 Voice for Pro/Ultimate</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Video Learning View - YouTube Search -->
+            <section class="view" id="video-learn-view">
+                <div class="view-header">
+                    <h1>
+                        <svg width="28" height="28" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;">
+                            <path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
+                            <path fill="#FFFFFF" d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                        Video Learning
+                    </h1>
+                    <p>Find the best educational videos on any topic</p>
+                    <div class="tutor-badge">
+                        <svg class="badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                        <span>Curated educational content from YouTube</span>
+                    </div>
+                </div>
+
+                <div class="video-learn-container">
+                    <!-- Video Search Form -->
+                    <div class="video-input-section" id="video-input-section">
+                        <div class="input-group">
+                            <label for="video-topic">What do you want to learn about?</label>
+                            <div class="search-input-wrapper">
+                                <input type="text" id="video-topic" placeholder="e.g., How photosynthesis works, Python tutorial, History of Rome...">
+                                <button class="search-icon-btn" onclick="searchVideos()">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"/>
+                                        <path d="m21 21-4.35-4.35"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="options-row">
+                            <div class="input-group half">
+                                <label for="video-level">Learning Level</label>
+                                <select id="video-level">
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate" selected>Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                </select>
+                            </div>
+                            <div class="input-group half">
+                                <label for="video-duration">Preferred Length</label>
+                                <select id="video-duration">
+                                    <option value="short">Short (under 5 min)</option>
+                                    <option value="medium" selected>Medium (5-15 min)</option>
+                                    <option value="long">Long (15+ min)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button class="primary-btn ai-btn large" onclick="searchVideos()">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                            Find Learning Videos
+                        </button>
+
+                        <!-- Quick Topic Suggestions -->
+                        <div class="topic-suggestions">
+                            <span class="suggestions-label">Popular topics:</span>
+                            <div class="suggestion-chips">
+                                <button class="chip" onclick="setVideoTopic('How does gravity work explained')">Gravity</button>
+                                <button class="chip" onclick="setVideoTopic('Water cycle for students')">Water Cycle</button>
+                                <button class="chip" onclick="setVideoTopic('Machine learning explained simply')">Machine Learning</button>
+                                <button class="chip" onclick="setVideoTopic('How the human heart works animation')">Human Heart</button>
+                                <button class="chip" onclick="setVideoTopic('World War 2 documentary')">WW2</button>
+                                <button class="chip" onclick="setVideoTopic('Python programming tutorial beginner')">Python</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Search Loading -->
+                    <div class="video-searching hidden" id="video-searching">
+                        <div class="searching-animation">
+                            <div class="searching-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Finding the best videos...</h3>
+                        <p>Searching for educational content on your topic</p>
+                    </div>
+
+                    <!-- Video Results Section -->
+                    <div class="video-results-section hidden" id="video-results-section">
+                        <div class="results-header">
+                            <h3>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="23 7 16 12 23 17 23 7"/>
+                                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                                </svg>
+                                Videos for: <span id="search-query-display"></span>
+                            </h3>
+                            <button class="secondary-btn small" onclick="newVideoSearch()">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                                New Search
+                            </button>
+                        </div>
+
+                        <!-- Currently Playing Video -->
+                        <div class="current-video-player" id="current-video-player">
+                            <div class="video-preview-container" id="video-preview-container" onclick="openCurrentVideo()">
+                                <img id="video-preview-thumbnail" src="" alt="Video thumbnail">
+                                <div class="video-preview-play">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="64" height="64">
+                                        <polygon points="5 3 19 12 5 21 5 3"/>
+                                    </svg>
+                                </div>
+                                <div class="video-preview-hint">Click to watch on YouTube</div>
+                            </div>
+                            <div class="current-video-info">
+                                <h2 id="current-video-title">Select a video to start learning</h2>
+                                <p id="current-video-channel"></p>
+                            </div>
+                        </div>
+
+                        <!-- Video List -->
+                        <div class="video-list-header">
+                            <h4>More Videos</h4>
+                        </div>
+                        <div class="video-list" id="video-list">
+                            <!-- Video cards inserted here -->
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="video-actions">
+                            <button class="primary-btn" onclick="createFlashcardsFromTopic()">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:middle;margin-right:6px;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8h20"/></svg>Create Flashcards on This Topic
+                            </button>
+                            <button class="secondary-btn" onclick="createQuizFromTopic()">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:middle;margin-right:6px;"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>Take Quiz on This Topic
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Import View -->
+            <section class="view active" id="quizlet-view">
+                <div class="view-header">
+                    <h1><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="15" y2="14"/></svg>Quick Import</h1>
+                    <p>Paste your flashcard content and convert them instantly</p>
+                </div>
+                <div class="input-section">
+                    <div class="input-group">
+                        <label for="quizlet-content">Paste Your Flashcard Content</label>
+                        <textarea id="quizlet-content" rows="12" placeholder="Paste your terms and definitions in any format:
+
+Term 1 - Definition 1
+Term 2 - Definition 2
+
+Or use tab-separated:
+Term 1	Definition 1
+Term 2	Definition 2
+
+Or use colon format:
+Term 1: Definition 1
+Term 2: Definition 2"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="quizlet-deck-name">Deck Name</label>
+                        <input type="text" id="quizlet-deck-name" placeholder="My Study Deck">
+                    </div>
+                    <button class="primary-btn" onclick="importQuizlet()">
+                        <span>📥 Import & Create Flashcards</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- YouTube View -->
+            <section class="view" id="youtube-view">
+                <div class="view-header">
+                    <h1><svg width="28" height="28" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;"><path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/><path fill="#FFFFFF" d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>YouTube Learning</h1>
+                    <p>Summarize videos or convert them to flashcards</p>
+                </div>
+                <div class="input-section">
+                    <div class="input-group">
+                        <label for="youtube-url">YouTube Video URL</label>
+                        <input type="text" id="youtube-url" placeholder="https://www.youtube.com/watch?v=...">
+                    </div>
+                    <div class="input-group">
+                        <label for="youtube-transcript">Or Paste Video Transcript</label>
+                        <textarea id="youtube-transcript" rows="8" placeholder="Paste the video transcript here..."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="youtube-deck-name">Deck Name (for flashcards)</label>
+                        <input type="text" id="youtube-deck-name" placeholder="YouTube Video Deck">
+                    </div>
+                    <div class="button-group">
+                        <button class="primary-btn ai-btn" onclick="summarizeYouTube()">
+                            <svg class="ai-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/></svg> AI Summarize
+                        </button>
+                        <button class="secondary-btn" onclick="youtubeToFlashcards()">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:middle;margin-right:6px;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8h20"/></svg>Create Flashcards
+                        </button>
+                    </div>
+                </div>
+                <div class="output-section" id="youtube-output"></div>
+            </section>
+
+            <!-- PDF View -->
+            <section class="view" id="pdf-view">
+                <div class="view-header">
+                    <h1><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>PDF Learning</h1>
+                    <p>Summarize PDFs or convert them to flashcards</p>
+                </div>
+                <div class="input-section">
+                    <div class="file-upload" id="pdf-upload">
+                        <input type="file" id="pdf-file" accept=".pdf,.txt" hidden>
+                        <div class="upload-area" onclick="document.getElementById('pdf-file').click()">
+                            <span class="upload-icon">📁</span>
+                            <p>Click to upload PDF or TXT file</p>
+                            <p class="upload-hint">or drag and drop</p>
+                        </div>
+                    </div>
+                    <div class="divider">OR</div>
+                    <div class="input-group">
+                        <label for="pdf-content">Paste PDF Content</label>
+                        <textarea id="pdf-content" rows="10" placeholder="Paste your document content here..."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="pdf-deck-name">Deck Name</label>
+                        <input type="text" id="pdf-deck-name" placeholder="PDF Study Deck">
+                    </div>
+                    <div class="button-group">
+                        <button class="primary-btn ai-btn" onclick="summarizePDF()">
+                            <svg class="ai-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/></svg> AI Summarize
+                        </button>
+                        <button class="secondary-btn" onclick="pdfToFlashcards()">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:middle;margin-right:6px;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8h20"/></svg>Create Flashcards
+                        </button>
+                    </div>
+                </div>
+                <div class="output-section" id="pdf-output"></div>
+            </section>
+
+            <!-- Notes View -->
+            <section class="view" id="notes-view">
+                <div class="view-header">
+                    <h1><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>Notes to Flashcards</h1>
+                    <p>Convert your study notes into flashcards</p>
+                </div>
+                <div class="input-section">
+                    <div class="input-group">
+                        <label for="notes-content">Your Notes</label>
+                        <textarea id="notes-content" rows="15" placeholder="Paste your notes here...
+
+You can use different formats:
+• Bullet points with key concepts
+• Q: Question / A: Answer format
+• Term: Definition format
+• Paragraph-style notes"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="notes-deck-name">Deck Name</label>
+                        <input type="text" id="notes-deck-name" placeholder="My Notes Deck">
+                    </div>
+                    <div class="options-group">
+                        <label>Flashcard Generation Style:</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="notes-style" value="qa" checked>
+                                <span>Question & Answer</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="notes-style" value="term">
+                                <span>Term & Definition</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="notes-style" value="cloze">
+                                <span>Fill in the Blank</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="primary-btn" onclick="notesToFlashcards()">
+                        <span>Create Flashcards</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- PowerPoint View -->
+            <section class="view" id="powerpoint-view">
+                <div class="view-header">
+                    <h1><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>PowerPoint Learning</h1>
+                    <p>Summarize presentations or convert them to flashcards</p>
+                </div>
+                <div class="input-section">
+                    <div class="file-upload" id="ppt-upload">
+                        <input type="file" id="ppt-file" accept=".pptx,.ppt,.txt" hidden>
+                        <div class="upload-area" onclick="document.getElementById('ppt-file').click()">
+                            <span class="upload-icon">📁</span>
+                            <p>Click to upload PowerPoint file</p>
+                            <p class="upload-hint">or drag and drop</p>
+                        </div>
+                    </div>
+                    <div class="divider">OR</div>
+                    <div class="input-group">
+                        <label for="ppt-content">Paste Slide Content</label>
+                        <textarea id="ppt-content" rows="10" placeholder="Paste your slide content here...
+
+Format each slide like:
+Slide 1: Title
+- Bullet point 1
+- Bullet point 2
+
+Slide 2: Another Title
+- Content here"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="ppt-deck-name">Deck Name</label>
+                        <input type="text" id="ppt-deck-name" placeholder="PowerPoint Study Deck">
+                    </div>
+                    <div class="button-group">
+                        <button class="primary-btn ai-btn" onclick="summarizePPT()">
+                            <svg class="ai-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/></svg> AI Summarize
+                        </button>
+                        <button class="secondary-btn" onclick="pptToFlashcards()">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:middle;margin-right:6px;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8h20"/></svg>Create Flashcards
+                        </button>
+                    </div>
+                </div>
+                <div class="output-section" id="ppt-output"></div>
+            </section>
+
+            <!-- My Decks View -->
+            <section class="view" id="my-decks-view">
+                <div class="view-header">
+                    <h1><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8h20"/><path d="M6 4v4"/><path d="M10 4v4"/></svg>My Flashcard Decks</h1>
+                    <p>Manage and study your flashcard collections</p>
+                </div>
+                <div class="decks-container" id="decks-list">
+                    <!-- Decks will be dynamically loaded here -->
+                </div>
+            </section>
+
+            <!-- Study Mode View -->
+            <section class="view" id="study-view">
+                <div class="view-header">
+                    <h1><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Study Mode</h1>
+                    <p>Focus on learning with interactive flashcards</p>
+                </div>
+                <div class="study-container" id="study-container">
+                    <div class="study-select" id="study-select">
+                        <h2>Select a deck to study</h2>
+                        <div class="deck-select-list" id="deck-select-list"></div>
+                    </div>
+                    <div class="study-session" id="study-session" style="display: none;">
+                        <div class="study-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="study-progress-fill"></div>
+                            </div>
+                            <span class="progress-text" id="study-progress-text">0 / 0</span>
+                        </div>
+                        <div class="flashcard-container">
+                            <div class="flashcard" id="flashcard" onclick="flipCard()">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <p id="card-front-text">Front of card</p>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p id="card-back-text">Back of card</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="study-controls">
+                            <button class="control-btn wrong" onclick="markCard('wrong')">
+                                <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg></span>
+                                <span>Still Learning</span>
+                            </button>
+                            <button class="control-btn flip" onclick="flipCard()">
+                                <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></span>
+                                <span>Flip Card</span>
+                            </button>
+                            <button class="control-btn correct" onclick="markCard('correct')">
+                                <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+                                <span>Got It!</span>
+                            </button>
+                        </div>
+                        <div class="study-stats">
+                            <div class="stat">
+                                <span class="stat-value" id="correct-count">0</span>
+                                <span class="stat-label">Correct</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value" id="wrong-count">0</span>
+                                <span class="stat-label">Still Learning</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value" id="remaining-count">0</span>
+                                <span class="stat-label">Remaining</span>
+                            </div>
+                        </div>
+                        <button class="secondary-btn" onclick="endStudySession()">End Session</button>
+                    </div>
+                    <div class="study-complete" id="study-complete" style="display: none;">
+                        <h2><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Study Session Complete!</h2>
+                        <div class="final-stats">
+                            <div class="final-stat">
+                                <span class="final-value" id="final-correct">0</span>
+                                <span class="final-label">Cards Mastered</span>
+                            </div>
+                            <div class="final-stat">
+                                <span class="final-value" id="final-wrong">0</span>
+                                <span class="final-label">Need Practice</span>
+                            </div>
+                            <div class="final-stat">
+                                <span class="final-value" id="final-accuracy">0%</span>
+                                <span class="final-label">Accuracy</span>
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button class="primary-btn" onclick="restartStudy()">Study Again</button>
+                            <button class="secondary-btn" onclick="studyMissed()">Review Missed Cards</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Pricing Modal -->
+    <div class="modal" id="pricing-modal">
+        <div class="modal-content pricing-modal">
+            <div class="modal-header">
+                <h2><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#667eea" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>Upgrade Your Learning</h2>
+                <button class="close-btn" onclick="closePricingModal()" aria-label="Close pricing modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="pricing-cards">
+                    <!-- Free Plan -->
+                    <div class="pricing-card">
+                        <div class="plan-header">
+                            <h3>Free</h3>
+                            <div class="plan-price">
+                                <span class="price">$0</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <ul class="plan-features">
+                            <li>✓ 5 AI requests per day</li>
+                            <li>✓ Basic quiz generation</li>
+                            <li>✓ Up to 10 flashcard decks</li>
+                            <li>✓ 100 cards per deck</li>
+                            <li>✗ AI Tutor (limited)</li>
+                            <li>✗ Advanced question types</li>
+                            <li>✗ Export to PDF</li>
+                            <li>✗ Priority support</li>
+                        </ul>
+                        <button class="plan-btn current" disabled>Current Plan</button>
+                    </div>
+
+                    <!-- Pro Plan -->
+                    <div class="pricing-card featured">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="plan-header">
+                            <h3>Pro</h3>
+                            <div class="plan-price">
+                                <span class="price">$3</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <ul class="plan-features">
+                            <li>✓ 50 AI requests per day</li>
+                            <li>✓ Advanced quiz generation</li>
+                            <li>✓ Unlimited flashcard decks</li>
+                            <li>✓ 500 cards per deck</li>
+                            <li>✓ AI Tutor (full access)</li>
+                            <li>✓ All question types</li>
+                            <li>✓ Export to PDF</li>
+                            <li>✗ Priority support</li>
+                        </ul>
+                        <button class="plan-btn upgrade" onclick="selectPlan('pro')">Upgrade to Pro</button>
+                    </div>
+
+                    <!-- Ultimate Plan -->
+                    <div class="pricing-card">
+                        <div class="plan-header">
+                            <h3>Ultimate</h3>
+                            <div class="plan-price">
+                                <span class="price">$10</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <ul class="plan-features">
+                            <li>✓ Unlimited AI requests</li>
+                            <li>✓ Flow-AI Pro quizzes</li>
+                            <li>✓ Unlimited everything</li>
+                            <li>✓ Unlimited cards per deck</li>
+                            <li>✓ Advanced AI Tutor</li>
+                            <li>✓ All question types</li>
+                            <li>✓ Export to all formats</li>
+                            <li>✓ Priority 24/7 support</li>
+                            <li>✓ Study analytics</li>
+                            <li>✓ Collaboration features</li>
+                        </ul>
+                        <button class="plan-btn upgrade" onclick="selectPlan('ultimate')">Go Ultimate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Deck Modal -->
+    <div class="modal" id="edit-deck-modal">
+        <div class="modal-content large">
+            <div class="modal-header">
+                <h2>Edit Deck</h2>
+                <button class="close-btn" onclick="closeEditModal()" aria-label="Close edit modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group">
+                    <label for="edit-deck-name">Deck Name</label>
+                    <input type="text" id="edit-deck-name">
+                </div>
+                <div class="cards-editor" id="cards-editor">
+                    <!-- Cards will be loaded here -->
+                </div>
+                <button class="add-card-btn" onclick="addCardToEditor()">+ Add Card</button>
+            </div>
+            <div class="modal-footer">
+                <button class="secondary-btn" onclick="closeEditModal()">Cancel</button>
+                <button class="primary-btn" onclick="saveEditedDeck()">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preview Cards Modal -->
+    <div class="modal" id="preview-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Generated Flashcards</h2>
+                <button class="close-btn" onclick="closePreviewModal()" aria-label="Close preview modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="preview-cards" id="preview-cards"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="secondary-btn" onclick="closePreviewModal()">Cancel</button>
+                <button class="primary-btn" onclick="savePreviewedCards()">Save to Deck</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Limit Reached Modal -->
+    <div class="modal" id="limit-modal">
+        <div class="modal-content small">
+            <div class="modal-header">
+                <h2><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>Limit Reached</h2>
+                <button class="close-btn" onclick="closeLimitModal()" aria-label="Close limit reached modal">&times;</button>
+            </div>
+            <div class="modal-body center">
+                <p id="limit-message">You've reached your daily AI request limit.</p>
+                <p class="limit-subtext">Upgrade to continue learning without limits!</p>
+            </div>
+            <div class="modal-footer center">
+                <button class="primary-btn" onclick="showPricing(); closeLimitModal();">View Plans</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="modal" id="payment-modal">
+        <div class="modal-content payment-modal">
+            <div class="modal-header">
+                <h2><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#667eea" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Complete Your Purchase</h2>
+                <button class="close-btn" onclick="closePaymentModal()" aria-label="Close payment modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="payment-summary">
+                    <div class="plan-summary">
+                        <h3 id="payment-plan-name">Pro Plan</h3>
+                        <p class="plan-description" id="payment-plan-description">50 AI requests/day, unlimited decks, and more!</p>
+                    </div>
+                    <div class="price-summary">
+                        <span class="price-amount" id="payment-amount">$3</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                </div>
+
+                <form class="payment-form" id="payment-form" onsubmit="processPayment(event)">
+                    <div class="beta-notice" style="background: linear-gradient(135deg, #10b981, #059669); padding: 15px; border-radius: 10px; margin-bottom: 20px; text-align: center;">
+                        <strong style="font-size: 16px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="vertical-align: middle; margin-right: 6px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Beta Access - All Features FREE!</strong>
+                        <p style="margin: 8px 0 0 0; font-size: 14px; opacity: 0.9;">Payment processing coming soon. Enjoy premium features during our beta period!</p>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="billing-email">Your Email</label>
+                        <input type="email" id="billing-email" placeholder="your@email.com">
+                    </div>
+
+                    <button type="submit" class="primary-btn payment-btn" id="pay-button">
+                        <span id="pay-button-text">Activate Free Beta Access</span>
+                        <span class="spinner hidden" id="payment-spinner"></span>
+                    </button>
+                </form>
+
+                <div class="payment-success hidden" id="payment-success">
+                    <div class="success-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                    <h3>Upgrade Successful!</h3>
+                    <p>Your account has been upgraded to <span id="success-plan-name">Pro</span>.</p>
+                    <p class="receipt-note">Enjoy your free beta access to premium features!</p>
+                    <button class="primary-btn" onclick="closePaymentModal()">Start Learning</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

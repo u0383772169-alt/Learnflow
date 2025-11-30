@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LearnFlow</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
+            color: #fff;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #a78bfa;
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        .back-btn:hover { color: #c4b5fd; }
+        h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h2 {
+            font-size: 24px;
+            margin: 30px 0 15px;
+            color: #a78bfa;
+        }
+        p {
+            color: #b4b4c4;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .contact-form {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            color: #b4b4c4;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 14px 16px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            color: #fff;
+            font-size: 16px;
+            font-family: inherit;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-card h3 {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        .contact-card a {
+            color: #a78bfa;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        .creator {
+            margin-top: 50px;
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">&larr; Back to LearnFlow</a>
+
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Whether you have questions, feedback, suggestions, or just want to say hello - we're here to help.</p>
+
+        <div class="contact-form">
+            <form action="mailto:u0383772169@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is this about?">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <h2>Other Ways to Reach Us</h2>
+
+        <div class="contact-info">
+            <div class="contact-card">
+                <h3>Email</h3>
+                <a href="mailto:u0383772169@gmail.com">u0383772169@gmail.com</a>
+            </div>
+
+            <div class="contact-card">
+                <h3>Phone</h3>
+                <a href="tel:696247999">696 247 999</a>
+            </div>
+
+            <div class="contact-card">
+                <h3>Roblox</h3>
+                <a href="https://www.roblox.com/users/profile" target="_blank">@Gdhdhshh4</a>
+            </div>
+        </div>
+
+        <h2>Response Time</h2>
+        <p>We typically respond within 24-48 hours. For urgent matters, please include "URGENT" in your subject line.</p>
+
+        <h2>Frequently Asked Questions</h2>
+        <p>Before contacting us, you might find your answer in our common questions:</p>
+        <ul style="color: #b4b4c4; margin-left: 20px;">
+            <li><strong>How do I reset my password?</strong> - Use the "Forgot Password" link on the login page</li>
+            <li><strong>How do I cancel my subscription?</strong> - Go to Settings > Subscription > Cancel</li>
+            <li><strong>Is my data safe?</strong> - Yes! Check our <a href="privacy.html" style="color: #a78bfa;">Privacy Policy</a></li>
+            <li><strong>Can I get a refund?</strong> - Yes, within 7 days of purchase</li>
+        </ul>
+
+        <div class="creator">
+            <p>LearnFlow is created by <strong>Chewang Tamang</strong></p>
+            <p style="color: #6b7280; font-size: 14px; margin-top: 10px;">Thank you for using LearnFlow!</p>
+        </div>
+    </div>
+</body>
+</html>
